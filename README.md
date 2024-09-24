@@ -10,6 +10,12 @@ Sections 20-27
 
 ## Section 21
 
+- Working on routing using the routing dom
+  - Creating our own error screen if a page DNE
+  - Creating dynamic path using ":"
+  - Using Relative Pathing
+  - Using Index Routes
+
 ## Section 22
 
 ## Section 23
