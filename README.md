@@ -10,6 +10,8 @@ Sections 20-27
 
 ## Section 21
 
+### Part 1
+
 - Working on routing using the routing dom
   - Creating our own error screen if a page DNE
   - Creating dynamic path using ":"
