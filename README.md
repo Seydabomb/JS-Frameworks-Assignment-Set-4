@@ -10,6 +10,8 @@ Sections 20-27
 
 ## Section 21
 
+"Events" app
+
 ### Part 1
 
 - Working on routing using the routing dom
@@ -17,6 +19,13 @@ Sections 20-27
   - Creating dynamic path using ":"
   - Using Relative Pathing
   - Using Index Routes
+  - Creating a Root layout with children routes
+
+### Part 2
+
+- Working on routing using the routing dom
+  - Pulling from the backend (in 'Events.js' and 'App.js')
+  - Creating Error.js page to handle errors
 
 ## Section 22
 

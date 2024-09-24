@@ -20,8 +20,58 @@
 // 7. Output the ID of the selected event on the EventDetailPage
 // BONUS: Add another (nested) layout route that adds the <EventNavigation> component above all /events... page components
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import RootLayout from "./pages/Root";
+import HomePage from "./pages/Home";
+import EventsPage, { loader as eventsLoader } from "./pages/Events";
+import NewEventPage from "./pages/NewEvent";
+import EventDetailPage, { loader as eventDetailLoader } from "./pages/EventDetail";
+import EditEventPage from "./pages/EditEvent";
+import EventsRootLayout from "./pages/EventsRoot";
+import ErrorPage from "./pages/Error";
+
+// '/' is the main page and we have us route to the HomePage page
+const router = createBrowserRouter([
+	// Relative Pathing. It appends the children paths to the parent "/" path
+	{
+		path: "/",
+		element: <RootLayout></RootLayout>,
+		// A root level error element will catch an error thrown anywhere from the lower levels.
+		errorElement: <ErrorPage></ErrorPage>,
+		children: [
+			// index:true means that route should be the default one displayed when in the parent
+			{ index: true, element: <HomePage></HomePage> },
+			{
+				path: "events",
+				element: <EventsRootLayout></EventsRootLayout>,
+				children: [
+					// Loader means that function will start rendering first before the page does. Only can access it within lower or the same hierarchy level. For example, the parent cannot access the loader data.
+					{
+						index: true,
+						element: <EventsPage></EventsPage>,
+						loader: eventsLoader,
+					},
+					{ path: "new", element: <NewEventPage></NewEventPage> },
+					{
+						path: ":eventId",
+						children: [
+							{
+								index: true,
+								element: <EventDetailPage></EventDetailPage>,
+								loader: eventDetailLoader,
+							},
+							{ path: ":eventId/edit", element: <EditEventPage></EditEventPage> },
+						],
+					},
+				],
+			},
+		],
+	},
+]);
+
 function App() {
-  return <div></div>;
+	return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
