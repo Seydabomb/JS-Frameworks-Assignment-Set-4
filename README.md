@@ -55,8 +55,9 @@ Very Basic Website just to practice deploying it
 
 ## Section 24
 
-- Tanstack Query
-  -
+"React Events" website
+
+### TanStack Query
 
 ## Section 25
 
