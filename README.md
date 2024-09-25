@@ -47,6 +47,9 @@ In this "Events" app, I am working on
 
 ## Section 23
 
+Very Basic Website just to practice deploying it
+
+- I deployed it using netlify as a host
 - Deployment Process
   - Lazy Loading
 
