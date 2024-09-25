@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"pup test","image":"https://www.hartz.com/wp-content/uploads/2024/03/newborn-puppy-care-2.jpg","date":"2024-09-27","description":"trrrrrying pup","id":"55c3b122-89fb-4448-b857-7935cff31ef7"}],"users":[{"email":"test@example.com","password":"$2a$12$83WOUtyGkzvkB.No0yFLIOhq6aMT1n7vdL/XPQMfVkV4dtpCZsev.","id":"4aa1f13f-54d3-4073-a008-bf4bbaf57861"},{"email":"test@test.com","password":"$2a$12$981.tUfssKWiZCB9ws7c9.6LfEpgMEgfMnhQknkVlgWC42Kv.FE3m","id":"f5ad4314-745f-4ad3-b30e-a37b7c874724"}]}

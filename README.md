@@ -39,7 +39,10 @@ In this "Events" app, I am working on
 
 - Authentication
   - Implementing user authentication.
+    - Using query parameters to change the link. Refer to 'AuthForm.js' in Components.
+    - Someone not logged-in cannot try to reach routes they cannot access.
   - Adding authentication persistence
+    - The UI is updated based on existence of a token.
   - Auto-logout functionality.
 
 ## Section 23
