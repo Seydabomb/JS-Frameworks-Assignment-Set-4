@@ -55,6 +55,9 @@ Very Basic Website just to practice deploying it
 
 ## Section 24
 
+- Tanstack Query
+  -
+
 ## Section 25
 
 ## Section 26
