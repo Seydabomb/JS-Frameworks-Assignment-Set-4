@@ -35,6 +35,13 @@ Sections 20-27
 
 ## Section 22
 
+In this "Events" app, I am working on
+
+- Authentication
+  - Implementing user authentication.
+  - Adding authentication persistence
+  - Auto-logout functionality.
+
 ## Section 23
 
 ## Section 24
