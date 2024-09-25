@@ -1,4 +1,4 @@
 [build]
   base    = "Section 23"  
-  publish = "Section 23/build"  # Publish directory for React apps
+  publish = "build"  # Publish directory for React apps
   command = "npm run build"  # Build command for React apps
