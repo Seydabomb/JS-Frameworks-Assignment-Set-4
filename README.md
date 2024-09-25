@@ -26,6 +26,12 @@ Sections 20-27
 - Working on routing using the routing dom
   - Pulling from the backend (in 'Events.js' and 'App.js')
   - Creating Error.js page to handle errors
+  - Outputting errors on the event form
+  - Adding a newsletter signup
+    - using the "useFetcher" function
+    - using 'await'
+    - using 'defer' for data fetching
+    - using loaders and actions
 
 ## Section 22
 

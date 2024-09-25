@@ -24,12 +24,17 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import EditEventPage from "./pages/EditEvent";
 import ErrorPage from "./pages/Error";
-import EventDetailPage, { loader as eventDetailLoader } from "./pages/EventDetail";
+import EventDetailPage, {
+	loader as eventDetailLoader,
+	action as deleteEventAction,
+} from "./pages/EventDetail";
 import EventsPage, { loader as eventsLoader } from "./pages/Events";
 import EventsRootLayout from "./pages/EventsRoot";
 import HomePage from "./pages/Home";
-import NewEventPage, { action as newEventAction } from "./pages/NewEvent";
+import NewEventPage from "./pages/NewEvent";
 import RootLayout from "./pages/Root";
+import { action as manipulateEventAction } from "./components/EventForm";
+import NewsletterPage, { action as newsletterAction } from "./pages/Newsletter";
 
 // '/' is the main page and we have us route to the HomePage page
 const router = createBrowserRouter([
@@ -60,12 +65,26 @@ const router = createBrowserRouter([
 							{
 								index: true,
 								element: <EventDetailPage></EventDetailPage>,
+								action: deleteEventAction,
 							},
-							{ path: "edit", element: <EditEventPage></EditEventPage> },
+							{
+								path: "edit",
+								element: <EditEventPage></EditEventPage>,
+								action: manipulateEventAction,
+							},
 						],
 					},
-					{ path: "new", element: <NewEventPage></NewEventPage>, action: newEventAction },
+					{
+						path: "new",
+						element: <NewEventPage></NewEventPage>,
+						action: manipulateEventAction,
+					},
 				],
+			},
+			{
+				path: "newsletter",
+				element: <NewsletterPage />,
+				action: newsletterAction,
 			},
 		],
 	},

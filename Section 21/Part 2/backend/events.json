@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"TESTING!","image":"https://www.hartz.com/wp-content/uploads/2024/03/newborn-puppy-care-2.jpg","date":"2024-09-26","description":"testtttt","id":"063d21ca-e234-4ba3-80fe-cb2c416d59b8"},{"title":"kitty","image":"https://www.animalleague.org/wp-content/uploads/2022/02/beth-blog-feb2022-white-grey-kitten-400x401.jpg","date":"2024-09-26","description":"testing againnnn","id":"9d1f9a82-fa52-465f-ac41-8b36383c9dac"},{"title":"a new event again","image":"https://www.hartz.com/wp-content/uploads/2024/03/newborn-puppy-care-2.jpg","date":"2024-09-24","description":"testing","id":"af13c073-8fb8-450e-b5fc-17665efe5a3d"},{"title":"A new event","image":"https://www.muenchen.de/en/events","date":"2024-09-26","description":"Some awesome event!","id":"78d460c6-80c1-4fc7-bea2-37bd1c396828"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
