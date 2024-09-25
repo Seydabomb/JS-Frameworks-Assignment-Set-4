@@ -47,6 +47,9 @@ In this "Events" app, I am working on
 
 ## Section 23
 
+- Deployment Process
+  - Lazy Loading
+
 ## Section 24
 
 ## Section 25
