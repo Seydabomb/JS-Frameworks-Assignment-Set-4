@@ -11,6 +11,7 @@ function MainNavigation() {
 						<NavLink
 							to="/"
 							className={({ isActive }) => (isActive ? classes.active : undefined)}
+							end
 						>
 							Home
 						</NavLink>

@@ -2,7 +2,7 @@ import { useLoaderData, json } from "react-router-dom";
 
 import EventsList from "../components/EventsList";
 
-// fetching data from the backend
+// Fetching data from the backend
 function EventsPage() {
 	const data = useLoaderData();
 

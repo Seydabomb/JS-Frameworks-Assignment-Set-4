@@ -1,13 +1,12 @@
 import { useRouteError } from "react-router-dom";
-
-import PageContent from "../components/PageContent";
 import MainNavigation from "../components/MainNavigation";
 
-const ErrorPage = () => {
-	// throwing a response object in Events.js which we grab here
+import PageContent from "../components/PageContent";
+
+function ErrorPage() {
 	const error = useRouteError();
 
-	let title = "An error ocurred!";
+	let title = "An error occurred!";
 	let message = "Something went wrong!";
 
 	if (error.status === 500) {
@@ -21,12 +20,12 @@ const ErrorPage = () => {
 
 	return (
 		<>
-			<MainNavigation></MainNavigation>
+			<MainNavigation />
 			<PageContent title={title}>
 				<p>{message}</p>
 			</PageContent>
 		</>
 	);
-};
+}
 
 export default ErrorPage;
