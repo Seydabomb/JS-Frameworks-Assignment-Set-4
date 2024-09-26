@@ -1,10 +1,14 @@
 import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { QueryClientProvider } from "@tanstack/react-query";
 
 import Events from "./components/Events/Events.jsx";
 import EventDetails from "./components/Events/EventDetails.jsx";
 import NewEvent from "./components/Events/NewEvent.jsx";
-import EditEvent from "./components/Events/EditEvent.jsx";
+import EditEvent, {
+	loader as editEventLoader,
+	action as editEventAction,
+} from "./components/Events/EditEvent.jsx";
+import { queryClient } from "./util/http.js";
 
 const router = createBrowserRouter([
 	{
@@ -14,7 +18,6 @@ const router = createBrowserRouter([
 	{
 		path: "/events",
 		element: <Events />,
-
 		children: [
 			{
 				path: "/events/new",
@@ -29,11 +32,12 @@ const router = createBrowserRouter([
 			{
 				path: "/events/:id/edit",
 				element: <EditEvent />,
+				loader: editEventLoader,
+				action: editEventAction,
 			},
 		],
 	},
 ]);
-const queryClient = new QueryClient();
 
 function App() {
 	return (

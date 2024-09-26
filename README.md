@@ -59,6 +59,12 @@ Very Basic Website just to practice deploying it
 
 ### TanStack Query
 
+- useQuery() to find data from the backend
+- useMutation(): Sends request to the backend whenever we tell it to, so when we mention mutate we are sending the info to the backend
+- isError, error to handle errors which are default props.
+- Deleting events, adding events, editing events, and updating events.
+  - Optimistic updating: updating instantly. You do this with onMutate() property which is triggered as soon as mutate() is triggered.
+
 ## Section 25
 
 ## Section 26
