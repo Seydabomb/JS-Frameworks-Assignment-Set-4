@@ -67,6 +67,8 @@ Very Basic Website just to practice deploying it
 
 ## Section 25
 
+Using Next.js for a fullstack app.
+
 ## Section 26
 
 ## Section 27
