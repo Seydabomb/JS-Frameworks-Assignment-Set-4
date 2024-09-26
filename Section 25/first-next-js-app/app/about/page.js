@@ -1,7 +1,5 @@
-export default function AboutPage() {
-	return (
-		<main>
-			<h1>About Us</h1>
-		</main>
-	);
-}
+const AboutPage = () => {
+	return <div>AboutPage</div>;
+};
+
+export default AboutPage;
