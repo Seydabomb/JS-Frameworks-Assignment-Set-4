@@ -69,6 +69,12 @@ Very Basic Website just to practice deploying it
 
 Using Next.js for a fullstack app.
 
+### first-next-js-app
+Learning the basics of Next.js
+
+### foodies
+The "foodies" app where you can
+
 ## Section 26
 
 ## Section 27
