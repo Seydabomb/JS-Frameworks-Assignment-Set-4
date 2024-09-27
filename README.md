@@ -70,10 +70,23 @@ Very Basic Website just to practice deploying it
 Using Next.js for a fullstack app.
 
 ### first-next-js-app
+
 Learning the basics of Next.js
 
 ### foodies
-The "foodies" app where you can
+
+The "foodies" app where you can browse meals and join the foodies community.
+
+- image slideshow
+- main-header is using "Link" and "Image"
+- 'use client' in image-slideshow.js & nav-link.js
+- 'usePathName()' from next.js to grab the active path from the url in nav-link.js
+- using SQlite3 as a database which created the "meals.db" file and we accessed that information in Lib -> 'meals.js'
+- loading page
+  - Or alternatively, using 'Suspense' from react which lets you manage states and show fallback content 'fetching meals...'
+- Including a "choose file" for an image picker in the meals -> share -> page.js
+  - Including an image preview to the picker
+- using slugify and xss packages in lib -> meals.js
 
 ## Section 26
 
