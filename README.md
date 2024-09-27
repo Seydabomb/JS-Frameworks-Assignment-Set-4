@@ -87,6 +87,8 @@ The "foodies" app where you can browse meals and join the foodies community.
 - Including a "choose file" for an image picker in the meals -> share -> page.js
   - Including an image preview to the picker
 - using slugify and xss packages in lib -> meals.js
+- adding metadata to update the title of the website (browser tab name)
+  - Refer to meals -> page.js & meals -> \[mealSlug\] -> page.js
 
 ## Section 26
 
