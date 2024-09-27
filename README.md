@@ -90,6 +90,8 @@ The "foodies" app where you can browse meals and join the foodies community.
 - adding metadata to update the title of the website (browser tab name)
   - Refer to meals -> page.js & meals -> \[mealSlug\] -> page.js
 
+### nextjs-essentials-pages-router
+
 ## Section 26
 
 ## Section 27
