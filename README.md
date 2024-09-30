@@ -103,6 +103,9 @@ A very basic, white-screen app for practicing.
 React Meetups app
 
 - pre-rendering data using getStaticProps() in the pages -> index.js
+- using MONGO DB for the backend database
+  - connecting to it using api -> new-meetup.js & and .env file
+- adding in metadata like a title and description to the different pages
 
 ## Section 26
 

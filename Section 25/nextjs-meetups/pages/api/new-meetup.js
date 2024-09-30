@@ -1,7 +1,6 @@
 // /api/new-meetup
 
 import { MongoClient } from "mongodb";
-// require("dotenv").config();
 
 // req = request, res = response
 async function handler(req, res) {

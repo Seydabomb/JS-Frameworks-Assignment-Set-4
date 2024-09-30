@@ -1,26 +1,22 @@
+import { Fragment } from "react";
+import Head from "next/head";
+import { MongoClient } from "mongodb";
+
 import MeetupList from "../components/meetups/MeetupList";
 
-const DUMMY_MEETUPS = [
-	{
-		id: "m1",
-		title: "A first Meetup",
-		image:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Lehesten_2012_x14.JPG/1024px-Lehesten_2012_x14.JPG",
-		address: "Some Address 5, 12345 Some City",
-		description: "This is a first meetup!",
-	},
-	{
-		id: "m2",
-		title: "A Second Meetup",
-		image:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Lehesten_2012_x14.JPG/1024px-Lehesten_2012_x14.JPG",
-		address: "Some Address 10, 12345 Some City",
-		description: "This is a second meetup!",
-	},
-];
-
 const HomePage = (props) => {
-	return <MeetupList meetups={props.meetups}></MeetupList>;
+	return (
+		<Fragment>
+			<Head>
+				<title>React Meetups</title>
+				<meta
+					name="description"
+					content="Browse a huge list of highly active React meetups!"
+				></meta>
+			</Head>
+			<MeetupList meetups={props.meetups}></MeetupList>
+		</Fragment>
+	);
 };
 
 // // Only if you need it for data that changes frequently
@@ -39,10 +35,25 @@ const HomePage = (props) => {
 // }
 
 export async function getStaticProps() {
-	// fetch data from an API
+	// fetch data from an API (our MONGODB, backend database)
+	// process.env.MONGO_URI is from the .env file
+	const client = await MongoClient.connect(process.env.MONGO_URI);
+	const db = client.db();
+
+	const meetupsCollection = db.collection("meetups");
+
+	const meetups = await meetupsCollection.find().toArray();
+
+	client.close();
+
 	return {
 		props: {
-			meetups: DUMMY_MEETUPS,
+			meetups: meetups.map((meetup) => ({
+				title: meetup.title,
+				address: meetup.address,
+				image: meetup.image,
+				id: meetup._id.toString(),
+			})),
 		},
 		// regenerated every 1 second if there are requests coming in from this page
 		revalidate: 1,
