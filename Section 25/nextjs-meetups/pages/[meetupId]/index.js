@@ -35,8 +35,8 @@ export async function getStaticPaths() {
 	client.close();
 
 	return {
-		// fallback: false means all the paths we put down is all the dynamic paths for this website. So if a use puts a url that doesn't lead to any of those dynamic paths, they'll get a 404 error.
-		fallback: false,
+		// fallback: false means all the paths we put down is all the dynamic paths for this website. So if a use puts a url that doesn't lead to any of those dynamic paths, they'll get a 404 error. 'blocking' says there may be some dynamic paths.
+		fallback: "blocking",
 		paths: meetups.map((meetup) => ({
 			params: {
 				meetupId: meetup._id.toString(),
