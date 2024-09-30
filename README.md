@@ -92,6 +92,18 @@ The "foodies" app where you can browse meals and join the foodies community.
 
 ### nextjs-essentials-pages-router
 
+A very basic, white-screen app for practicing.
+
+- creating pages
+  - creating a dynamic page
+- navigating between the pages
+
+### nextjs-meetups
+
+React Meetups app
+
+- pre-rendering data using getStaticProps() in the pages -> index.js
+
 ## Section 26
 
 ## Section 27
