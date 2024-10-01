@@ -116,12 +116,6 @@ Working on animations
 - Adjusting the modal
 - Adjusting the "View Details" arrow
 
-### Framer Motion Playground
-
-Playground with a cube where a user can input an X, Y, and a Rotate to initiate a custom animation.
-
-### Framer Motion Transitions & Animations
-
-Same project as the CSS Transitions & Animations except now we are using Framer Motion
+### Framer Motion
 
 ## Section 27
