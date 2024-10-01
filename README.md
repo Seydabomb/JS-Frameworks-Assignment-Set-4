@@ -109,4 +109,13 @@ React Meetups app
 
 ## Section 26
 
+Working on animations
+
+### CSS Transitions & CSS Animations
+
+- Adjusting the modal
+- Adjusting the "View Details" arrow
+
+### Framer Motion
+
 ## Section 27
