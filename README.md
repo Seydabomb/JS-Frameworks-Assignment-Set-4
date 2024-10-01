@@ -113,6 +113,8 @@ Working on animations
 
 ### CSS Transitions and Animations
 
+Welcome screen with hero and city in the background. This routes to a challenges page where you can add new challenges, check if you failed them, and check if you completed them.
+
 - Adjusting the modal
 - Adjusting the "View Details" arrow
 
@@ -132,5 +134,12 @@ Same project as CSS Transitions & CSS Animations except using Framer Motion
 - AnimatePresence in Header.jsx
 - sliding tab bar in ChallengeTabs.jsx
 - useScroll and useTransform hooks in pages -> Welcome.jsx
+  - Make the hero image, the city image, and the text move based on scrolling
 
 ## Section 27
+
+React "Travel" app
+
+- accordion with compound components
+- render props for a search bar
+- debouncing using useRef() and setTimeout()
