@@ -124,4 +124,13 @@ Playground with a cube where a user can input an X, Y, and Rotate to initiate a 
 
 Same project as CSS Transitions & CSS Animations except using Framer Motion
 
+- motion.\[tag\]
+  - initial, animate, exit, and variants props in Modal.jsx
+  - whileHover and transition props in Header.jsx
+  - variants (using the special staggerChildren prop within variants) in NewChallenge.jsx
+  - in Challenges.jsx
+- AnimatePresence in Header.jsx
+- sliding tab bar in ChallengeTabs.jsx
+- useScroll and useTransform hooks in pages -> Welcome.jsx
+
 ## Section 27
