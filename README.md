@@ -118,4 +118,10 @@ Working on animations
 
 ### Framer Motion
 
+Playground with a cube where a user can input an X, Y, and Rotate to initiate a custom animation
+
+### Framer Motion In-Depth
+
+Same project as CSS Transitions & CSS Animations except using Framer Motion
+
 ## Section 27
