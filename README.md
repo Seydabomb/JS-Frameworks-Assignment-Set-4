@@ -111,7 +111,7 @@ React Meetups app
 
 Working on animations
 
-### CSS Transitions & CSS Animations
+### CSS Transitions and Animations
 
 - Adjusting the modal
 - Adjusting the "View Details" arrow
